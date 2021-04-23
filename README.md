@@ -19,5 +19,5 @@ Multiloops and buldges are ignored to simplify V so that it only has the first t
 cases.
   
   
-In the '/output' folder you can find the filled-in tables W - V , an optimal fold, its bonds, and the corresponding backtrack path.
+In the `/output` folder you can find the filled-in tables W - V , an optimal fold, its bonds, and the corresponding backtrack path.
 
