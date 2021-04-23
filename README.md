@@ -4,9 +4,9 @@ An RNA secondary structure prediction algorithm
 
 This algorithm finds all optimal secondary structures of the RNA sequence AAUACUCCGUUGCAGCAU with the following simplified Zuker minimization algorithm. The following initialisation is used:
 
-\begin{equation}
+$$
 j+5>i \Longrightarrow V(i, j)=W(i, j)=\infty, \quad i>j
-\end{equation}
+$$
 
 hairpin energy h(i; j) = 2(i 􀀀 j + 5), and stem energy s(i; j) = 􀀀4; 0; 4, for Watson-Crick bonds, GU, and all
 other possible pairs respectively. Ignore multiloops and buldges to simplify V so that it only has the first two
