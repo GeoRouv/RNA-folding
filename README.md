@@ -7,9 +7,17 @@ This algorithm finds all optimal secondary structures of the RNA sequence AAUACU
     j + 5 > i => V(i, j) = W(i, j) = ∞
 
 
-hairpin energy h(i; j) = 2(i 􀀀 j + 5), and stem energy s(i; j) = 􀀀4; 0; 4, for Watson-Crick bonds, GU, and all
-other possible pairs respectively. Ignore multiloops and buldges to simplify V so that it only has the first two
+hairpin energy:  
+
+        h(i, j) = 2 * (i - j + 5)
+
+and stem energy:
+
+        s(i, j) = -4, 0, 4 for Watson-Crick bonds, GU, and all other possible pairs respectively.
+
+Multiloops and buldges are ignored to simplify V so that it only has the first two
 cases.
+  
+  
+In the '/output' folder you can find the filled-in tables W - V , an optimal fold, its bonds, and the corresponding backtrack path.
 
-
-Implement your algorithm in Matlab, R, Python or other convenient system; submit your code. Print the filled-in tables W; V . Draw (by hand) an optimal fold, show its bonds, and the corresponding backtrack path.
